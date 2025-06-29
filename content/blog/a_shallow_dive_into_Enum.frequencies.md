@@ -5,7 +5,7 @@ date: 2025-06-29
 tags: elixir
 ---
 
-A string is called an anagram of another string if they have the same letters but arranged differently. For example, “hello” is an anagram of “elloh”. Can you write a program to check this?
+A string is called an anagram of another string if they have the same letters but are arranged differently. For example, “hello” is an anagram of “elloh”. Can you write a program to check this?
 
 This problem comes from Leetcode 242: Valid Anagram. It has an elegant solution in Elixir.
 
@@ -36,7 +36,7 @@ def frequencies(enumerable) do
 end
 ```
 
-`^` is called the pin operator. It matches against a variable’s existing value
+`^` is called [the pin operator](https://hexdocs.pm/elixir/1.18.1/pattern-matching.html#the-pin-operator). It matches against a variable’s existing value
 
 ```elixir
 iex> x = 1
@@ -54,4 +54,8 @@ case acc do
 end
 ```
 
-is saying: If the key already has a value in the map, update the map with `key => value + 1` . Otherwise, `Map.put` the key and 1 inside the map.
+is saying: If the key already has a value in the map, update the map with
+
+`key => value + 1` .
+
+Otherwise, update the map with `key => 1`.
