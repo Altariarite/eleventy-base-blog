@@ -1,5 +1,5 @@
 ---
-title: A shallow dive into Elixir's Enum.frequencies.
+title: A shallow dive into Elixir's Enum.frequencies
 description: We look at what Enum.frequencies is doing
 date: 2025-06-29
 tags: elixir
