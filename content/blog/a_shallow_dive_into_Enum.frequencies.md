@@ -5,9 +5,11 @@ date: 2025-06-29
 tags: elixir
 ---
 
-A string is called an anagram of another string if they have the same letters but are arranged differently. For example, “hello” is an anagram of “elloh”. Can you write a program to check this?
+A string is called an anagram of another string if they have the same letters but are arranged differently. For example, “hello” is an anagram of “elloh”. Can you write a program to check this?[^1]
 
-This problem comes from Leetcode 242: Valid Anagram. It has an elegant solution in Elixir.
+[^1]: This problem comes from Leetcode 242: Valid Anagram.
+
+Here's an elegant solution in Elixir:
 
 ```elixir
 def is_anagram(s, t) do
